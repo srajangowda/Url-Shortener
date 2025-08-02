@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>URL Shortener - Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f2f5, #dce3f1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 30px;
+      color: #666;
+      font-size: 16px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 8px;
+      transition: background 0.3s;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      background-color: #0056b3;
+    }
+
+    @media (min-width: 600px) {
+      .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        flex: 1;
+        text-align: center;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to URL Shortener</h1>
+    <p>Make long links short, simple, and shareable.</p>
+    <div class="nav-links">
+      <a href="/land">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/login">Login</a>
+      <a href="/signup">Sign Up</a>
+    </div>
+  </div>
+</body>
+</html>
